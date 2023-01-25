@@ -13,14 +13,18 @@ const navbarCloseBtn = document.getElementById('navbar-close-btn');
 
 // show navbar
 navbarShowBtn.addEventListener('click', () => { 
+    console.log(`'I'm working`);
     navbarCollapseDiv.classList.add('navbar-collapse-rmw');
+    
 });
 
 navbarCloseBtn.addEventListener('click', () => {
+    console.log(`'I'm working`);
     navbarCollapseDiv.classList.remove('navbar-collapse-rmw');
 });
 
 document.addEventListener('click', (e) => {
+    console.log(`'I'm working`);
     if(e.target.id != "navbar-collapse" && e.target.id != "navbar-show-btn" && e.target.parentElement.id != "navbar-show-btn"){
         navbarCollapseDiv.classList.remove('navbar-collapse-rmw');
     }
@@ -28,10 +32,12 @@ document.addEventListener('click', (e) => {
 
 // hide side bar
 navbarCloseBtn.addEventListener('click', () => {
+    console.log(`'I'm working`);
     navbarCollapseDiv.classList.remove('navbar-collapse-rmw');
 });
 
 document.addEventListener('click', (e) => {
+    console.log(`'I'm working`);
     if(e.target.id != "navbar-collapse" && e.target.id != "navbar-show-btn" && e.target.parentElement.id != "navbar-show-btn"){
         navbarCollapseDiv.classList.remove('navbar-collapse-rmw');
     }
